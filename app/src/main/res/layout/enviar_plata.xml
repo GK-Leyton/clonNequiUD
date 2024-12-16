@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    tools:context=".EnviarPlata">
+
+    <ImageButton
+        android:id="@+id/btnVolver_enviaPlata"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras_negro" />
+
+    <TextView
+        android:id="@+id/txtMensajeEnviarPlata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="20dp"
+        android:text="Pide plata"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver_enviaPlata" />
+
+    <EditText
+        android:id="@+id/txtNumeroTelefonoEnviar"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:paddingLeft="10dp"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:hint="Cel"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColorHint="#262222"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeEnviarPlata" />
+
+    <EditText
+        android:id="@+id/txtCantidadEnviar"
+        android:layout_width="369dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="#F5F5F5"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:hint="¿Cuantó?"
+        android:textColorHint="#262222"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroTelefonoEnviar" />
+
+    <EditText
+        android:id="@+id/txtMensajeEnviar"
+        android:layout_width="369dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:paddingLeft="10dp"
+        android:background="#F5F5F5"
+        android:gravity="top|left"
+        android:hint="Mensaje"
+        android:textColorHint="#262222"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCantidadEnviar" />
+
+
+
+    <TextView
+        android:id="@+id/txtMensajeTrasfiyaEnviarPlata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="350dp"
+        android:text="¿De dónde saldrá la plata?"
+        android:textColor="#C74E96"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver_enviaPlata" />
+
+
+    <Button
+        android:id="@+id/btn_enviarPlata"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#C74E96"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:enabled="false"
+        android:text="Sigue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameDisponible"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeTrasfiyaEnviarPlata">
+
+        <ImageButton
+            android:id="@+id/btnDisponible"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/icono_dinero_disponible" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Disponible"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

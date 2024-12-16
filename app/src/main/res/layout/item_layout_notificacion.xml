@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_margin="8dp"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconoMegafono"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icono_megafono"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtTituloNotificacionItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulo Notificacion"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="-30dp"
+            />
+
+        <TextView
+            android:id="@+id/txtDetalleNotificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:text="Nombre de la notificacion"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</FrameLayout>

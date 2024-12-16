@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#1E001F"
+    tools:context=".LoginContrasena">
+
+    <ImageButton
+        android:id="@+id/btnVolver1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:background="#1E061F"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_hacia_la_izquierda" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Escribe tu clave"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="117dp"
+        android:text="No dudamos que seas tú... Pero es mejor confirmar ;)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword2" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword2"
+        android:layout_width="42.9dp"
+        android:layout_height="49.5dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/rounded_white_password_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPassword1"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:maxLength="1"/>
+
+    <EditText
+        android:id="@+id/editTextNumberPassword1"
+        android:layout_width="42.9dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/rounded_white_password_background"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:maxLength="1"/>
+
+    <EditText
+        android:id="@+id/editTextNumberPassword4"
+        android:layout_width="42.9dp"
+        android:layout_height="49.5dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="94dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/rounded_white_password_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPassword3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="1"/>
+
+    <EditText
+        android:id="@+id/editTextNumberPassword3"
+        android:layout_width="42.9dp"
+        android:layout_height="49.5dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17dp"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/rounded_white_password_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword4"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:maxLength="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

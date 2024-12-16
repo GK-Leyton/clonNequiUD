@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="450dp"
+    android:background="@drawable/bordes_superiores_redondeados"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtMensajeConfirmacionEnvioNequi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="Opciones para sacar"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutCajero"
+        android:layout_width="392dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/icono_dinero" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:text="Cajero"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="39dp"
+            android:text="Desde un cajero Bancolombia"
+            android:textColor="#736D6D"
+            android:textSize="13sp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:srcCompat="@drawable/icono_pico_derecha_negro" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutPuntoFisico"
+        android:layout_width="392dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutCajero">
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/icono_tienda" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:text="Punto físico"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="39dp"
+            android:text="En corresponsales y Puntos Nequi"
+            android:textColor="#736D6D"
+            android:textSize="13sp" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            app:srcCompat="@drawable/icono_pico_derecha_negro" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Debes tener minimo $10.000 para sacar plata de tu Nequi."
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeConfirmacionEnvioNequi" />
+
+    <FrameLayout
+        android:layout_width="392dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutPuntoFisico">
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/icono_dinero_disponible" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Disponible"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnX_withdrawMoney"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_x" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="450dp"
+    android:background="@drawable/bordes_superiores_redondeados"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageButton
+        android:id="@+id/btnAtrasTrasfiyaDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#F2F2F2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras_negro" />
+
+
+    <TextView
+        android:id="@+id/txtMensajeConfirmacionRecargarEfectivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="Recarga con efectivo"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/FrameInformacion1RecargarEfectivo"
+        android:layout_width="390dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensajeConfirmacionRecargarEfectivo">
+
+        <ImageButton
+            android:id="@+id/btnR1"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/icono_tienda" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="15dp"
+            android:text="Ve a un punto Nequi o\nCorresponsal Bancolombia"
+            android:textColor="#3C3838"
+            android:textSize="15sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="13dp"
+        android:text="Busca tu punto más cercano"
+        android:textColor="#595252"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrameInformacion1RecargarEfectivo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="400dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/linea_gris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/FrameInformacion2RecargarEfectivo"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+        <ImageButton
+            android:id="@+id/btnR2"
+            android:layout_width="58dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#F2F2F2"
+            app:srcCompat="@drawable/icono_celular" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="15dp"
+            android:text="Dile al encargado que vas a \nrecargar Nequi"
+            android:textColor="#3C3838"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:text="* Tu número de Nequi es tu número de celular."
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="85dp"
+            android:text="* Lo minimo que puedes recargar seran $10.000."
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnRecargarNequiEfectivo"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="163dp"
+        android:text="Ver puntos de recarga"
+        android:backgroundTint="#d80081"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FrameInformacion2RecargarEfectivo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

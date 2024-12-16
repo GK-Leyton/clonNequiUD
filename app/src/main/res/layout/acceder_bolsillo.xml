@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AccederBolsillo">
+
+    <Button
+        android:id="@+id/btnListoEditarBolsillo"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#C74E96"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:enabled="false"
+        android:text="Listo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnRetirarBolsillo"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="#C74E96"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:enabled="false"
+        android:text="Retirar"
+        app:layout_constraintBottom_toTopOf="@+id/btnListoEditarBolsillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnVolverAccederBolsillo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras_negro" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="9dp"
+        android:text="Edita tu Bolsillo"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolverAccederBolsillo" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout9"
+        android:layout_width="360dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView64">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/fondo_para_bolsillos">
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtNombreDelBolsilloAcceder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:text="Nombre Del Bolsillo"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtCantidadEnBolsilloAcceder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            android:text="$ 9999"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout10"
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout9">
+
+        <TextView
+            android:id="@+id/txtNombreDelBolsilloAccederEstatico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Nombre del Bolsillo"
+            android:textColor="#d80081"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/txtNombreDelBolsilloAccederEditanble"
+            android:layout_width="248dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Nombre del bolsillo"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textColorHint="#645151"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout11"
+        android:layout_width="360dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout10">
+
+        <EditText
+            android:id="@+id/txtCuantoVasADejarBolsillo"
+            android:layout_width="248dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="¿Cúanto vas a meter?"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColorHint="#645151"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnRestarBolsillo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="10dp"
+            android:background="#D9D9D9"
+            app:srcCompat="@drawable/icono_resta" />
+
+        <ImageButton
+            android:id="@+id/btnSumarBolsillo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="10dp"
+            android:background="#D9D9D9"
+            app:srcCompat="@drawable/icono_suma" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

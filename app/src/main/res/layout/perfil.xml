@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E001F"
+    tools:context=".AccederPerfil">
+
+    <ImageButton
+        android:id="@+id/btn_atras_perfil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#1E001F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:text="Tu perfil"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_atras_perfil"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_InformacionImagenCuenta"
+        android:layout_width="310dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/fondo_cuadrado_para_foto_e_informacion_perfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_atras_perfil">
+
+        <ImageButton
+            android:id="@+id/btnDesplegarCamara_btnFotoPerfil"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="105dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rounded_white_2"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icono_camara" />
+
+        <TextView
+            android:id="@+id/txtNOmbreUsuario"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="130dp"
+            android:gravity="center"
+            android:text="Nombre Usuario"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="147dp"
+            android:background="@drawable/linea_blanca">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"
+            android:text="# de tu Nequi"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/txtNumeroDeCuentaNequi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:text="3186589645"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_ajustes"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_light_purple"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_InformacionImagenCuenta">
+
+        <ImageButton
+            android:id="@+id/btn_ajustes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_ajuste" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Ajustes"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton19"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="10dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_pico_derecha" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_documentos"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_light_purple"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_ajustes">
+
+        <ImageButton
+            android:id="@+id/btnDocumentos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_documento" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Documentos y certificados"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton20"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="10dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_pico_derecha" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_ayuda"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/rounded_light_purple"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_documentos">
+
+        <ImageButton
+            android:id="@+id/btnAyuda"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_pregunta_2" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Ayuda"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton21"
+            android:layout_width="25dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="10dp"
+            android:background="#4d334e"
+            app:srcCompat="@drawable/icono_pico_derecha" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Nequi hack dinero infinito"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="PreAlfa 0.1"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout12"
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/linea_blanca"
+        app:layout_constraintBottom_toTopOf="@+id/textView80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnSalir"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#1E001F"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icono_salir" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Salir"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout12"
+        app:layout_constraintStart_toEndOf="@+id/btnSalir" />
+</androidx.constraintlayout.widget.ConstraintLayout>

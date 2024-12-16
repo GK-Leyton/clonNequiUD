@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="244dp">
+
+    <ImageButton
+        android:id="@+id/btnColchonFavoritos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="61dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_colchon_64px" />
+
+    <ImageButton
+        android:id="@+id/btnBolsilloFavoritos"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="95dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnColchonFavoritos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_bolsillo_billete_64px" />
+
+    <ImageButton
+        android:id="@+id/btnMetasFavoritos"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="151dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_cerdito" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="1dp"
+        android:text="Colchón"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnColchonFavoritos" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="1dp"
+        android:text="Bolsillo
+"
+        app:layout_constraintStart_toEndOf="@+id/textView59"
+        app:layout_constraintTop_toBottomOf="@+id/btnBolsilloFavoritos" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="1dp"
+        android:text="Metas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMetasFavoritos" />
+</androidx.constraintlayout.widget.ConstraintLayout>

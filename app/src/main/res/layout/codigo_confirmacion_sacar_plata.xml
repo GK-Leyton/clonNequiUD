@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CodigoConfirmacionRetiro">
+
+    <TextView
+        android:id="@+id/txtMensajeConfirmacionRetiro"
+        android:layout_width="226dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Escribe este número en el cajero para sacar plata."
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+    <ImageButton
+        android:id="@+id/btnVolver_cod_con_retiro"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/icono_flecha_atras_negro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="186dp"
+        android:background="@drawable/fondo_forma_rombo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="110dp"
+            android:text="Vence a las x:xx pm"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtCodigoRetiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="85dp"
+            android:text="999999"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnOjo_cod_con_retiro"
+            android:layout_width="33dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginTop="20dp"
+            android:background="#1E001F"
+            android:src="@drawable/icono_ojo" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:text="Tu código"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnVolver_cod_con_retiro"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

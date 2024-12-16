@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".CreacionUsuario">
+
+    <ImageButton
+        android:id="@+id/btnAtras_crearUsuario"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono_flecha_atras_negro" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Crea tu Usuario"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtras_crearUsuario" />
+
+
+    <EditText
+        android:id="@+id/txtNombre_crearUsuario"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="41dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_light_grey_2"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColorHint="#956F6F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <EditText
+        android:id="@+id/txtOcupacion_crearUsuario"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="41dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_light_grey_2"
+        android:ems="10"
+
+        android:hint="Ocupacion"
+        android:inputType="text"
+        android:textColorHint="#956F6F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre_crearUsuario" />
+
+    <Spinner
+        android:id="@+id/spinnerCiudades"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="41dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_light_grey_2"
+        android:textColorHint="#956F6F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOcupacion_crearUsuario" />
+
+
+    <EditText
+        android:id="@+id/txtNumero_crearUsuario"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="5dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/rounded_light_grey_2"
+        android:ems="10"
+        android:hint="3142716310"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="#956F6F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCiudades" />
+
+
+    <EditText
+        android:id="@+id/txtContrasena_crearUsuario"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="5dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/rounded_light_grey_2"
+        android:ems="10"
+        android:hint="***********"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textColorHint="#956F6F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero_crearUsuario" />
+
+    <Button
+        android:id="@+id/btnListoCrearUsuario"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#d80081"
+        android:text="Listo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="Tu Nombre"
+        android:textColor="#d80081"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombre_crearUsuario"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="Tu Ocupacion"
+        android:textColor="#d80081"
+        app:layout_constraintBottom_toTopOf="@+id/txtOcupacion_crearUsuario"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="Tu Ciudad"
+        android:textColor="#d80081"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCiudades"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="Tu numero de Telefono"
+        android:textColor="#d80081"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumero_crearUsuario"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="2dp"
+        android:text="Contraseña"
+        android:textColor="#d80081"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrasena_crearUsuario"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

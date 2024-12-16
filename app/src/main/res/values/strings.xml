@@ -1,0 +1,7 @@
+<resources>
+    <string name="colored_text">
+        <![CDATA[
+        Ve a la web <font color="#FF0000">www.nequi.co</font> e inicia sesión con tú número de cel y tu clave
+        ]]>
+    </string>
+</resources>
